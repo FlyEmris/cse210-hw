@@ -40,3 +40,43 @@ class Program
         {
             Console.WriteLine($"i = {i}");
         }
+
+        // Functions
+
+        returnType FunctionName(paramType paramName1, paramType paramName2)
+        {
+            function body
+        }
+
+        //return int
+
+        int Add2(int start)
+        {
+            return start + 2;
+        }
+        Console.WriteLine($"Total = {Add2(4)}");
+
+        //void
+
+        void DisplayString(string value)
+        {
+            Console.WriteLine(value);
+        }
+
+        DisplayString("Hello no return value");
+
+        //variable scope
+
+        int SumItAll(in[] numbers)
+        {
+            var total = 0;
+            foreach (var i in numbers)
+            {
+                total += i;
+            }
+            return total;
+        }
+
+        var numbs = new int[]{1,2,3};
+        System.Console.WriteLine($"SumItAll = {SumitAll(numbs)}");
+        System.Console.WriteLine($"Total = {total}")
