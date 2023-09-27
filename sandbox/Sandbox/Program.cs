@@ -80,3 +80,21 @@ class Program
         var numbs = new int[]{1,2,3};
         System.Console.WriteLine($"SumItAll = {SumitAll(numbs)}");
         System.Console.WriteLine($"Total = {total}")
+
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello Sandbox World!");
+
+
+        string carMake = "Honda";
+        string carModel = "Civic"
+        int carMileage = 33;
+
+        
+    }
+}

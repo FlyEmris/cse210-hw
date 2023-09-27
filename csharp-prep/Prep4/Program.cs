@@ -27,9 +27,32 @@ class Program
         List<string>myStrings = new List<string>();
         myString.Add("hello");
 
+        int sum = 0;
+        foreach (int number in numbers)
+        {
+            sum += number;
+        }
+
+        Console.WriteLine($"The sum is: {sum}")
+
+
+        float average = ((float)sum) / numbers.Count;
+        Console.WriteLine($"The average is: {average}");
+
 
         foreach (var i in myInts)
         {
             Console.WriteLine($"My int = {i}");
+
+            int max = numbers[0];
+
+            foreach (int number in numbers)
+            {
+                max - number;
+            }
+        
+        Console.WriteLine($"The max is: {max}");
         }
+
+
 
