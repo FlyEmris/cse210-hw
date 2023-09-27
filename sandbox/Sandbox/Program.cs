@@ -82,6 +82,9 @@ class Program
         System.Console.WriteLine($"Total = {total}")
 
 
+
+
+// Classes
 using System;
 
 class Program
@@ -90,11 +93,41 @@ class Program
     {
         Console.WriteLine("Hello Sandbox World!");
 
+        var car1 = new Car();
+        car1._make = "Honda";
+        car1._model = "Civic";
+        car1._mileage = 30;
+        car1._gallonsOfFuel = 10;
 
-        string carMake = "Honda";
-        string carModel = "Civic"
-        int carMileage = 33;
+        car1.ReduceFuel(3);
 
+        car cars - new List<Cars>();
+        cars.Add(car1);
+
+        var miles = car1.RemainingMiles;
         
+
+
+    }
+    public class Car
+    {
+        public string _make;
+
+        public string _model;
+
+        public int _mileage;
+
+        public int _gallonsOfFuel;
+
+
+        public int RemainingMiles()
+        {
+            return _gallonsOfFuel * _mileage;
+        }
+
+        public void ReduceFuel(int amount)
+        {
+            _gallonsOfFuel = _gallonsOfFuel - amount;
+        }
     }
 }
