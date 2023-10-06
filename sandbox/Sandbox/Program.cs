@@ -30,7 +30,7 @@ class Program
         //for loop
         for (var i = 0; i<5; ++i)
         {
-            Console.writeLine($"i = {i}");
+            Console.WriteLine($"i = {i}");
         }
 
         //foreach loop
