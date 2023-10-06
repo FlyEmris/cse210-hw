@@ -1,6 +1,6 @@
 using System;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography.X509Certificates;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 public class Journal
 {
         public List<Entry> _Entries = new List<Entry>();
@@ -91,5 +91,25 @@ public class Journal
                 _Entries.Add(entry);
             }
         }   
+    }
+    public void CreateJSON(string userInput)
+    {
+        string fileName = userInput + ".json";
+        List<JsonItem> _data = new List<JsonItem>();
+
+        foreach (Entry entry in _Entries)
+        {
+            _data.Add(new JsonItem()
+            {
+                ID = entry._entryNumber,
+                Date = entry._date,
+                Prompt = entry._prompt,
+                Entry = entry._Entry
+            });
+        }
+
+        string json = JsonSerializer.Serialize(_data);
+        File.WriteAllText(fileName, json);
+
     }
 }

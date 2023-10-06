@@ -6,6 +6,8 @@ public class Entry
     public string _date;
     public string _Entry;
 
+    public string _File;
+
 
     public Entry()
     {

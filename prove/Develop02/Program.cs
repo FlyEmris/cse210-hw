@@ -58,6 +58,8 @@ class Menu
                         Console.WriteLine("Sorry that is a incorrect option!");
                     break;
                 }
+                read = Console.ReadLine();
+                reading = int.Parse(read);
             }  
 
         }
@@ -70,11 +72,11 @@ class Menu
 
         return theCurrentTime;
     }
-    static void AddJournalEntry()
-    {
-        string MyJournalFile = "MyJournal.txt";
-        File.AppendAllLines(MyJournalFile, "");
-    }
+    // static void AddJournalEntry()
+    // {
+    //     string MyJournalFile = "MyJournal.txt";
+    //     File.AppendAllLines(MyJournalFile, "");
+    // }
     static string GetEntryId()
     {
         Guid entryuuid = Guid.NewGuid();
