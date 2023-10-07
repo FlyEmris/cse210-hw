@@ -15,14 +15,15 @@ class Menu
             Console.WriteLine("3.  Load");
             Console.WriteLine("4.  Save");
             Console.WriteLine("5.  Quit");
-
             Console.WriteLine("What would you like to do?");
             string read = Console.ReadLine();
             int reading = int.Parse(read);
+
+            
         
             while(reading != 5)
             {
-                switch(reading)
+                switch (reading)
                 {
                     case 1:
                         string entryId = GetEntryId();
@@ -41,26 +42,29 @@ class Menu
 
                         journal._Entries.Add(entry);
 
-                    break;
+                        break;
                     case 2:
                         journal.Display();
-                    break;
+                        break;
                     case 3:
                         journal.LoadJournalFile();
-                    break;
+                        break;
                     case 4:
                         journal.CreateJournalFile();
-                    break;
+                        AddJournalEntry();
+                        break;
                     case 5:
                         Console.WriteLine("Have a good Day!");
-                    break;
+                        break;
                     default:
-                        Console.WriteLine("Sorry that is a incorrect option!");
-                    break;
+                        Console.WriteLine($"Sorry that is a incorrect option!");
+                        break;
                 }
                 read = Console.ReadLine();
                 reading = int.Parse(read);
-            }  
+            }
+            Console.WriteLine("Have a good day!");
+            Console.ReadLine();  
 
         }
 
@@ -72,11 +76,11 @@ class Menu
 
         return theCurrentTime;
     }
-    // static void AddJournalEntry()
-    // {
-    //     string MyJournalFile = "MyJournal.txt";
-    //     File.AppendAllLines(MyJournalFile, "");
-    // }
+    static void AddJournalEntry()
+    {
+        string MyJournalFile = "MyJournal.txt";
+        File.AppendAllText(MyJournalFile, "");
+    }
     static string GetEntryId()
     {
         Guid entryuuid = Guid.NewGuid();

@@ -16,7 +16,6 @@ public class Journal
 
         public void Display()
         {
-            Console.WriteLine($"");
             Console.WriteLine("Entries:");
 
 
@@ -25,6 +24,7 @@ public class Journal
             {
                 entry.Display();
             }
+            Console.WriteLine("End");
         
         }
     public void CreateJournalFile()
