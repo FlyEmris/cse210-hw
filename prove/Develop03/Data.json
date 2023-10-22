@@ -1,0 +1,38 @@
+[
+    {
+        "key": 1,
+        "book": "Moses",
+        "chapter": 1,
+        "verseStart": 36,
+        "verseEnd": 0,
+        "keyPhrase": "This is my work and my glory",
+        "text": "For behold, this is my work and my glory to bring to pass the imortality and eternal life of man."
+    },
+    {
+        "key": 2,
+        "book": "Mosiah",
+        "chapter": 14,
+        "verseStart": 6,
+        "verseEnd": 0,
+        "keyPhrase": "All we, like sheep, have gone asray;",
+        "text": "All we, like sheep, have gone astray; we have turned every one to his own way; and the Lord hath laid on him the iniquities of us all."
+    },
+    {
+        "key": 3,
+        "book": "Psalm",
+        "chapter": 46,
+        "verseStart": 10,
+        "verseEnd": 0,
+        "keyPhrase": "Be still, and know that I am God:",
+        "text": "Be still, and know that I am God: I will be exalted among the heathen, I will be exalted in the earth."
+    },
+    {
+        "key": 4,
+        "book": "1 Corinthians",
+        "chapter": 6,
+        "verseStart": 19,
+        "verseEnd": 20,
+        "keyPhrase": "Your body is the temple of the Holy Ghost",
+        "text": "What? know ye not that your body is the temple of the Holy Ghost which is in you, which ye have of God, and ye are not your own?  For ye are bought with a price: therefore glorify God in your body, and in your spirit, which are God’s."
+    }
+]

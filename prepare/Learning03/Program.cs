@@ -20,6 +20,14 @@ class Program
         Fraction s2 = new Fraction(1, 3);
         Console.WriteLine(s2.GetFractionString());
         Console.WriteLine(s2.GetDecimalValue());
+
+        Fraction s3 = new Fraction(37, 23);
+        Console.WriteLine(s3.GetFractionString());
+        Console.WriteLine(s3.GetDecimalValue());
+
+        Fraction s4 = new Fraction(2543, 231);
+        Console.WriteLine(s4.GetFractionString());
+        Console.WriteLine(s4.GetDecimalValue());
     }
 }
     
