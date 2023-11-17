@@ -28,7 +28,7 @@ class Program
             Console.WriteLine("[6] Quit");
             Console.WriteLine("Select a choice from the Menu:  ");
             option = int.Parse(Console.ReadLine());
-        }
+        
 
 
 
@@ -260,6 +260,7 @@ class Program
                     Console.Clear();
                     Console.WriteLine("Ah ah ah not a correct option.");
                     break;
+            }
         }
     }
 }
